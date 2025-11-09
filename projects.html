@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Ayan Banerjee</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    >
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-brand">Ayan Banerjee</div>
+      <div class="nav-toggle" id="navToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">About Me</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+      </ul>
+    </nav>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-header">
+            <h3>EmailMiner.ai - GDIT x UMD App Dev Club  <a href="https://github.com/ADC-GDIT-Spring-2025/Machine-Learning" target="_blank" class="inline-link">Source Code</a></h3>
+            <p class="project-tech">Python, LangChain, Qdrant, GLiNER, Microsoft E5</p>
+          </div>
+          <ul>
+            <li>
+              Built a GraphRAG pipeline using LangChain, Qdrant, Neo4j, and AWS Bedrock to enable LLM-based summarization and retrieval across large-scale email datasets.
+            </li>
+          </ul>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <h3>BudgetBuddy - Financial Management App <a href="https://github.com/team-moondust/BudgetBuddy-backend" target="_blank" class="inline-link">Source Code</a></h3>
+            <p class="project-tech">Python, Scikit-Learn, Flask, React, MongoDB Atlas</p>
+          </div>
+          <ul>
+            <li>
+              Built a gamified financial literacy app to deliver personalized financial insights based on user spending habits.
+            </li>
+            <li>
+              <strong>Award: </strong>Best Overall and Best Financial Hack at Bitcamp Hackathon
+            </li>
+          </ul>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <h3>MoonDust Financial Manager for Startups <a href="https://github.com/team-moondust/MoonDust-backend" target="_blank" class="inline-link">Source Code</a></h3>
+            <p class="project-tech">Python, Scikit-Learn, Flask, Vue.js, Nuxt.js, MongoDB</p>
+          </div>
+          <ul>
+            <li>
+              Developed a financial management platform with real-time analytics and fraud detection features to help startups make informed investment decisions and track finances.
+            </li>
+            <li>
+             <strong>Award: </strong>Best Machine Learning Hack at Bitcamp Hackathon
+            </li>
+          </ul>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
