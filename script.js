@@ -286,38 +286,10 @@ document.addEventListener("keydown", (e) => {
 
 // Start game when clicking on name
 const mainName = document.getElementById("mainName");
-const snakeTooltip = document.getElementById("snakeTooltip");
-let hoverTimeout = null;
 
 if (mainName) {
   mainName.addEventListener("click", () => {
     startGame();
-    // Hide tooltip when game starts
-    if (snakeTooltip) {
-      snakeTooltip.classList.remove("show");
-    }
-    if (hoverTimeout) {
-      clearTimeout(hoverTimeout);
-    }
-  });
-  
-  // Show tooltip after 5 seconds of hovering
-  mainName.addEventListener("mouseenter", () => {
-    hoverTimeout = setTimeout(() => {
-      if (snakeTooltip) {
-        snakeTooltip.classList.add("show");
-      }
-    }, 5000); // 5 seconds
-  });
-  
-  // Hide tooltip and clear timeout when mouse leaves
-  mainName.addEventListener("mouseleave", () => {
-    if (hoverTimeout) {
-      clearTimeout(hoverTimeout);
-    }
-    if (snakeTooltip) {
-      snakeTooltip.classList.remove("show");
-    }
   });
 }
 

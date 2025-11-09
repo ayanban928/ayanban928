@@ -253,25 +253,6 @@ section h2 {
   color: var(--primary-color);
 }
 
-.clickable-name .snake-tooltip {
-  position: absolute;
-  left: 100%;
-  top: 50%;
-  transform: translateY(-50%);
-  margin-left: 1.5rem;
-  font-size: 0.875rem;
-  font-weight: 400;
-  color: var(--primary-color);
-  white-space: nowrap;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.3s ease;
-}
-
-.clickable-name .snake-tooltip.show {
-  opacity: 1;
-}
-
 .about-content {
   max-width: 100%;
 }
