@@ -88,18 +88,18 @@ function placeApple() {
 
 // Draw the snake and apple
 function draw() {
-  // Clear canvas with semi-transparent background for trail effect
-  ctx.fillStyle = "rgba(249, 250, 251, 0.25)";
+  // Clear canvas with dark grayish background for trail effect
+  ctx.fillStyle = "rgba(13, 13, 13, 0.3)";
   ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-  // Draw game boundary
-  ctx.strokeStyle = "rgba(59, 130, 246, 0.4)";
-  ctx.lineWidth = 3;
+  // Draw game boundary with Apple-style glow
+  ctx.strokeStyle = "rgba(10, 132, 255, 0.5)";
+  ctx.lineWidth = 2;
   ctx.strokeRect(gameArea.x, gameArea.y, gameArea.width, gameArea.height);
   
   // Draw subtle grid pattern inside boundary
-  ctx.strokeStyle = "rgba(59, 130, 246, 0.08)";
-  ctx.lineWidth = 1;
+  ctx.strokeStyle = "rgba(255, 255, 255, 0.05)";
+  ctx.lineWidth = 0.5;
   for (let i = 0; i <= gameArea.cols; i++) {
     ctx.beginPath();
     ctx.moveTo(gameArea.x + i * gridSize, gameArea.y);
@@ -115,9 +115,9 @@ function draw() {
 
   // Draw snake (offset by game area position)
   snake.forEach((segment, index) => {
-    // Gradient effect for retro look
-    const opacity = 1 - (index / snake.length) * 0.5;
-    ctx.fillStyle = `rgba(59, 130, 246, ${opacity})`;
+    // Gradient effect for sleek Apple-style look
+    const opacity = 1 - (index / snake.length) * 0.4;
+    ctx.fillStyle = `rgba(10, 132, 255, ${opacity})`;
     ctx.fillRect(
       gameArea.x + segment.x * gridSize + 1,
       gameArea.y + segment.y * gridSize + 1,
@@ -125,8 +125,8 @@ function draw() {
       gridSize - 2
     );
     
-    // Retro border effect
-    ctx.strokeStyle = `rgba(30, 64, 175, ${opacity})`;
+    // Subtle glow effect
+    ctx.strokeStyle = `rgba(10, 132, 255, ${opacity * 0.6})`;
     ctx.lineWidth = 1;
     ctx.strokeRect(
       gameArea.x + segment.x * gridSize + 1,
@@ -136,16 +136,16 @@ function draw() {
     );
   });
 
-  // Draw apple with retro style (offset by game area position)
-  ctx.fillStyle = "#ef4444";
+  // Draw apple with Apple-style design (offset by game area position)
+  ctx.fillStyle = "#ff3b30";
   ctx.fillRect(
     gameArea.x + apple.x * gridSize + 2,
     gameArea.y + apple.y * gridSize + 2,
     gridSize - 4,
     gridSize - 4
   );
-  ctx.strokeStyle = "#b91c1c";
-  ctx.lineWidth = 2;
+  ctx.strokeStyle = "rgba(255, 59, 48, 0.6)";
+  ctx.lineWidth = 1.5;
   ctx.strokeRect(
     gameArea.x + apple.x * gridSize + 2,
     gameArea.y + apple.y * gridSize + 2,
