@@ -57,12 +57,3 @@ const observer = new IntersectionObserver((entries) => {
 document.querySelectorAll("section").forEach((section) => {
   observer.observe(section);
 });
-
-// Collapsible Experience Section
-const collapsibles = document.querySelectorAll(".collapsible");
-collapsibles.forEach((card) => {
-  const header = card.querySelector(".collapsible-header");
-  header.addEventListener("click", () => {
-    card.classList.toggle("active");
-  });
-});
