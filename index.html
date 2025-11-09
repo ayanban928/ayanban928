@@ -16,6 +16,15 @@
   </head>
   <body>
     <script src="script.js" defer></script>
+    <!-- Snake Game Canvas -->
+    <canvas id="snakeCanvas"></canvas>
+    
+    <!-- Snake Game Score Display -->
+    <div id="snakeScore" class="snake-score">
+      <div class="score-item">Length: <span id="currentLength">1</span></div>
+      <div class="score-item">Best: <span id="bestScore">0</span></div>
+    </div>
+    
     <!-- Navigation -->
     <nav class="navbar">
       <div class="nav-brand">Ayan Banerjee</div>
@@ -34,7 +43,10 @@
     <!-- About Section -->
     <section id="about" class="about">
       <div class="about-header">
-        <h1>Ayan Banerjee</h1>
+        <h1 id="mainName" class="clickable-name">
+          Ayan Banerjee
+          <span class="snake-tooltip" id="snakeTooltip">&larr; click my name to play snake</span>
+        </h1>
         <div class="social-links">
           <a href="mailto:ayanbanerj@gmail.com" class="social-link"
             ><i class="fas fa-envelope"></i
@@ -73,7 +85,7 @@
           <li>Won Best Machine Learning Hack at Bitcamp 2024 with <a href="https://devpost.com/software/financial-management-software?_gl=1*xjjjgz*_gcl_au*MTgzNzk3Mjg0Ny4xNzYyMjIxMTQx*_ga*MjEyMDA3ODkwNi4xNzYyMjIxMTQx*_ga_0YHJK3Y10M*czE3NjI2Njg3MTUkbzIkZzEkdDE3NjI2Njg3NjQkajExJGwwJGgw" target="_blank" class="inline-link">MoonDust</a></li>
         </ul>
         
-        <p class="about-note">Click on <a href="experience.html" class="inline-link">Experience</a> or <a href="projects.html" class="inline-link">Projects</a> tabs to see more!</p>
+        <p class="about-note">Click on <a href="experience.html" class="inline-link">Experience</a> or <a href="projects.html" class="inline-link">Projects</a> tabs to see more!<br>(Btw if you click my name, you can play snake!)</p>
       </div>
     </section>
   </body>
