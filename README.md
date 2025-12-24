@@ -1,5 +1,5 @@
 # 🐣 About Me:
-Exploring the fields of AI/ML, NLP, Quantum Computing, Biocomputing, and Software Engineering.<br><br>LinkedIn: https://www.linkedin.com/in/ayanban928/<br><br>Checkout my Portfolio: https://ayanban928.github.io/ayanban928/<br><br>
+Exploring the fields of AI/ML, NLP, Quantum Computing, Biocomputing, and Software Engineering.<br><br>LinkedIn: https://www.linkedin.com/in/ayanban928/<br><br>Checkout my Portfolio: https://ayanban928.github.io/ayanban928/<br><br><br><br>Check out my pinned repositories to view some of my projects! 
 
 
 # 💻 Tech Stack:
