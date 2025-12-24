@@ -10,5 +10,4 @@ I am currently a Computer Science and Math double major at The University of Mar
 ### Developer Tools & Platforms:
 ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=flat&logo=git&logoColor=white) ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=flat&logo=docker&logoColor=white) ![Kubernetes](https://img.shields.io/badge/kubernetes-%23326ce5.svg?style=flat&logo=kubernetes&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=flat&logo=githubactions&logoColor=white) ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=flat&logo=postman&logoColor=white) ![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=flat&logo=amazon-aws&logoColor=white) ![Azure](https://img.shields.io/badge/azure-%230072C6.svg?style=flat&logo=microsoftazure&logoColor=white) ![ServiceNow](https://img.shields.io/badge/ServiceNow-%2362A420.svg?style=flat&logo=servicenow&logoColor=white)
 
-
-<br><br>Check out my pinned repositories to view some of my projects! 
+<br>Check out my pinned repositories to view some of my projects! 
