@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ayanban928/static/css/main.9a6a785d.css",
+    "main.js": "/ayanban928/static/js/main.1af32404.js",
+    "index.html": "/ayanban928/index.html",
+    "main.9a6a785d.css.map": "/ayanban928/static/css/main.9a6a785d.css.map",
+    "main.1af32404.js.map": "/ayanban928/static/js/main.1af32404.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9a6a785d.css",
+    "static/js/main.1af32404.js"
+  ]
+}
