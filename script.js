@@ -161,11 +161,11 @@ function update() {
   // Move snake
   const head = { x: snake[0].x + direction.x, y: snake[0].y + direction.y };
 
-  // Wrap around game boundary edges
-  if (head.x < 0) head.x = gameArea.cols - 1;
-  if (head.x >= gameArea.cols) head.x = 0;
-  if (head.y < 0) head.y = gameArea.rows - 1;
-  if (head.y >= gameArea.rows) head.y = 0;
+  // check for boundary collision
+  if (head.x < 0 || head.x >= gameArea.cols || head.y < 0 || head.y >= gameArea.rows) {
+    gameOver();
+    return;
+  }
 
   // Check collision with self
   for (let i = 0; i < snake.length; i++) {
