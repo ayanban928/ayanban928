@@ -1,88 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ayan's Webpage</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ayan Banerjee</title>
+    <link rel="stylesheet" href="styles.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    >
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
-    >
+    />
   </head>
   <body>
-    <script src="script.js" defer></script>
-    <!-- Snake Game Canvas -->
-    <canvas id="snakeCanvas"></canvas>
-    
-    <!-- Snake Game Score Display -->
-    <div id="snakeScore" class="snake-score">
-      <div class="score-item">Length: <span id="currentLength">1</span></div>
-      <div class="score-item">Best: <span id="bestScore">0</span></div>
-    </div>
-    
-    <!-- Navigation -->
-    <nav class="navbar">
-      <div class="nav-brand">Ayan Banerjee</div>
-      <div class="nav-toggle" id="navToggle">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <ul class="nav-links">
-        <li><a href="index.html" class="active">About Me</a></li>
-        <li><a href="experience.html">Experience</a></li>
-        <li><a href="projects.html">Projects</a></li>
-      </ul>
-    </nav>
+    <div class="page-shell">
+      <main class="content">
+        <section class="hero">
+          <p class="eyebrow">Hello there</p>
+          <h1 class="hero-title">
+            <span class="im-text">I’m</span>
+            <span class="rainbow-text">Ayan</span>
+          </h1>
+          <p class="lead">
+            I’m a Computer Science and Math student at the University of Maryland,
+            College Park, and I build software and AI systems that make useful ideas come to life.
+          </p>
+          <div class="social-row">
+            <a href="mailto:ayanbanerj@gmail.com">Email</a>
+            <a href="https://linkedin.com/in/ayanban928/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a href="https://github.com/ayanban928" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+        </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-      <div class="about-header">
-        <h1 id="mainName" class="clickable-name">Ayan Banerjee</h1>
-        <div class="social-links">
-          <a href="mailto:ayanbanerj@gmail.com" class="social-link"
-            ><i class="fas fa-envelope"></i
-          ></a>
-          <a
-            href="https://linkedin.com/in/ayanban928/"
-            target="_blank"
-            class="social-link"
-            ><i class="fab fa-linkedin"></i
-          ></a>
-          <a
-            href="https://github.com/ayanban928"
-            target="_blank"
-            class="social-link"
-            ><i class="fab fa-github"></i
-          ></a>
-        </div>
-      </div>
-      <div class="about-content">
-        <p class="about-intro">
-          Hi there 👋 Welcome to my webpage!
-        </p>
-        
-        <h3>What am I up to nowadays?</h3>
-        <ul>
-          <li>Computer Science and Math student at the University of Maryland, College Park 🐢.</li>
-          <li>Working as a Machine Learning Engineer at startup: <a href="https://ajamais.ai/" target="_blank" class="inline-link">Àjamais AI</a></li>
-        </ul>
-        
-        <h3>Some stuff I have done in the past...</h3>
-        <ul>
-          <li>Built agentic test automation workflows with LangGraph @ Walmart Global Tech.</li>
-          <li>Researched Quantum Computing @ UMD</li>
-          <li>Won Best Overall and Financial Hack at Bitcamp 2025 with <a href="https://devpost.com/software/budgetbuddy-3qvr78" target="_blank" class="inline-link">BudgetBuddy</a></li>
-          <li>Won Best Machine Learning Hack at Bitcamp 2024 with <a href="https://devpost.com/software/financial-management-software?_gl=1*xjjjgz*_gcl_au*MTgzNzk3Mjg0Ny4xNzYyMjIxMTQx*_ga*MjEyMDA3ODkwNi4xNzYyMjIxMTQx*_ga_0YHJK3Y10M*czE3NjI2Njg3MTUkbzIkZzEkdDE3NjI2Njg3NjQkajExJGwwJGgw" target="_blank" class="inline-link">MoonDust</a></li>
-        </ul>
-        
-        <p class="about-note">Click on <a href="experience.html" class="inline-link">Experience</a> or <a href="projects.html" class="inline-link">Projects</a> tabs to see more!<br>(Btw if you click my name, you can play snake!)</p>
-      </div>
-    </section>
+        <section id="about" class="about">
+          <p>
+            I’m currently a Software Engineer Intern at Tesla. Outside of work, I enjoy building projects that make life easier for myself and
+            for others. Before this role, I completed internships at Amazon and Walmart Global Tech, and I researched
+            quantum computing at the University of Maryland, College Park.
+          </p>
+        </section>
+
+        <section class="mini-links" aria-label="More information links">
+          <a href="experience.html">Click here for more about my experiences.</a>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js" defer></script>
   </body>
 </html>
