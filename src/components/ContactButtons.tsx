@@ -11,11 +11,13 @@ export function ContactButtons() {
     <div className="contact-buttons">
       {contactLinks.map((link) => {
         const external = link.href.startsWith('http')
+        // Email scrolls to the contact form instead of opening a mail app.
+        const href = link.icon === 'email' ? '#contact' : link.href
         return (
           <a
             key={link.label}
             className="contact-btn"
-            href={link.href}
+            href={href}
             target={external ? '_blank' : undefined}
             rel={external ? 'noreferrer' : undefined}
           >
