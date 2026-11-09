@@ -3,17 +3,20 @@ export type Experience = {
   company: string
   role: string
   description?: string
+  logo?: string
 }
 
 export const experiences: Experience[] = [
   {
     period: 'September 2026 — Present',
     company: 'Tesla',
+    logo: '/logos/tesla.jpeg',
     role: 'Software Engineer Intern',
   },
   {
     period: 'June 2026 — August 2026',
     company: 'Amazon',
+    logo: '/logos/amazon.jpeg',
     role: 'Software Engineer Intern',
     description:
       'Built and optimized scalable pricing infrastructure and AI-powered operational tooling to improve performance, reliability, and product automation across global systems.',
@@ -21,6 +24,7 @@ export const experiences: Experience[] = [
   {
     period: 'September 2025 — May 2026',
     company: 'Àjamais AI',
+    logo: '/logos/ajamais.jpeg',
     role: 'Machine Learning Engineer',
     description:
       'Designed and shipped real-time AI and distributed systems for matchmaking, session orchestration, and 3D floor-plan conversion to improve scale and latency for a live product experience.',
@@ -28,6 +32,7 @@ export const experiences: Experience[] = [
   {
     period: 'June 2025 — August 2025',
     company: 'Walmart Global Tech',
+    logo: '/logos/walmart.jpeg',
     role: 'Software Engineer Intern',
     description:
       'Developed AI-driven automation and observability tools to streamline issue resolution, reduce engineering overhead, and improve operational decision-making at scale.',
@@ -35,6 +40,7 @@ export const experiences: Experience[] = [
   {
     period: 'August 2023 — May 2025',
     company: 'University of Maryland',
+    logo: '/logos/umd.jpeg',
     role: 'Research Assistant',
     description:
       'Researched generative-model robustness and large-scale scientific data analysis to improve model quality, signal processing, and performance under noisy conditions.',

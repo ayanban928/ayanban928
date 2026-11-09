@@ -36,7 +36,16 @@ export function Home() {
                 <time className="muted">{exp.period}</time>
                 <div>
                   <h3>
-                    <span className="hover-accent">{exp.company}</span>
+                    <span className="company-line">
+                      <span className="hover-accent">{exp.company}</span>
+                      {exp.logo ? (
+                        <img className="company-logo" src={exp.logo} alt="" />
+                      ) : (
+                        <span className="company-badge" aria-hidden="true">
+                          {exp.company.charAt(0)}
+                        </span>
+                      )}
+                    </span>
                     <span className="muted"> · {exp.role}</span>
                   </h3>
                   {exp.description && <p className="muted">{exp.description}</p>}

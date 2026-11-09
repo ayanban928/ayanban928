@@ -1,6 +1,6 @@
 :root {
   color-scheme: dark;
-  --bg: #000000;
+  --bg: #141417;
   --text: #f5f5f7;
   --muted: #8e8e93;
   --line: rgba(255, 255, 255, 0.12);
@@ -269,6 +269,32 @@ h3 {
 .experience-row time {
   font-size: 0.875rem;
   padding-top: 2px;
+}
+
+.company-line {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.company-logo {
+  width: 22px;
+  height: 22px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.company-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  color: var(--accent);
+  font-size: 0.75rem;
+  font-weight: 600;
 }
 
 .experience-row h3 span {
